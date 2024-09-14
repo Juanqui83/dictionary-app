@@ -2,7 +2,7 @@
   "name": "dictionary-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Juanqui83.github.io/dictionary-app/",
+  "homepage": "https://juanqui83.github.io/dictionary-app/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.7",
     "@testing-library/jest-dom": "^5.17.0",

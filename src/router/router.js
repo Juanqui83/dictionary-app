@@ -1,10 +1,14 @@
-// router.js
-import DictionaryScreen from '../screens/DictionaryScreen';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import DictionaryScreen from './screens/DictionaryScreen';
 
-const basename = process.env.NODE_ENV === 'production' ? '/dictionary-app/' : '/';
+function AppRouter() {
+  return (
+    <Router>
+      <Switch>
+        <Route path="/dictionary" component={DictionaryScreen} />
+      </Switch>
+    </Router>
+  );
+}
 
-const routes = [
-  { path: `${basename}dictionary`, component: DictionaryScreen },
-];
-
-export default routes;
+export default AppRouter;

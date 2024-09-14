@@ -1,8 +1,10 @@
 // router.js
 import DictionaryScreen from '../screens/DictionaryScreen';
 
+const basename = process.env.NODE_ENV === 'production' ? '/dictionary-app/' : '/';
+
 const routes = [
-  { path: '/dictionary', component: DictionaryScreen },
+  { path: `${basename}dictionary`, component: DictionaryScreen },
 ];
 
 export default routes;
